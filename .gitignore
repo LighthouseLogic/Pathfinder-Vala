@@ -1,0 +1,59 @@
+# =================================================================
+# PROJECT: Pathfinder
+# DESCRIPTION: Vala / elementary OS / macOS Hybrid Environment
+# =================================================================
+
+# --- 1. Vala Transpilation Artifacts ---
+# Vala is a "transpiled" language that converts to C. We ignore 
+# these because they are machine-generated and redundant. 
+# Including them would bloat your git history and misidentify 
+# the project language as C on GitHub.
+*.c
+*.h
+*.vapi
+!src/manual_config.h  # Example: Only keep C files you hand-wrote
+
+# --- 2. Meson & Ninja Build Directories ---
+# In elementary OS, we use "out-of-source" builds. All the heavy
+# lifting happens in these folders. We never push these to GitHub 
+# because they are specific to your Mac mini's architecture.
+build/
+_build/
+bin/
+obj/
+
+# --- 3. Binaries & Executables ---
+# These are the final "Pathfinder" app files. They are large 
+# and shouldn't be version controlled.
+pathfinder
+src/pathfinder
+*.o
+*.so
+*.la
+*.lo
+
+# --- 4. elementary OS & AppCenter (Flatpak) ---
+# When you test your app for the AppCenter, Flatpak creates
+# these folders to manage the sandbox environment.
+.flatpak-builder/
+repo/
+/.flatpak/
+
+# --- 5. macOS System Junk ---
+# Since you are working on a Mac mini, macOS creates hidden 
+# metadata files like .DS_Store. If you don't ignore these, 
+# they will clutter your GitHub and look messy to Linux users.
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# --- 6. Editor & IDE Settings ---
+# These folders store your personal window positions and 
+# local project settings for VS Code or GNOME Builder.
+.vscode/
+.editorconfig
+*.swp
+*~
