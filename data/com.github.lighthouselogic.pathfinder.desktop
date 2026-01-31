@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Pathfinder
+GenericName=Decision Tool
+Comment=Analyze and weight complex decisions
+Exec=com.github.lighthouselogic.pathfinder
+Icon=com.github.lighthouselogic.pathfinder
+Type=Application
+Categories=Office;Utility;
