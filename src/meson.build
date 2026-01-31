@@ -1,13 +1,14 @@
-# List your Vala source files here
-pathfinder_sources = files(
-    'main.vala',
-    # Add future files here, like 'NavigationEngine.vala'
+# Define the source files for Pathfinder
+sources = files(
+    'Application.vala',
+    'MainWindow.vala',
+    'LineOfSightView.vala'
 )
 
-# This creates the actual executable file
+# Create the executable
 executable(
-    meson.project_name(),
-    pathfinder_sources,
+    app_id,
+    sources,
     dependencies: dependencies,
     install: true
 )
