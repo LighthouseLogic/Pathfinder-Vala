@@ -1,7 +1,9 @@
 # Define the source files for Pathfinder
 sources = files(
     'Application.vala',
-    'MainWindow.vala'
+    'MainWindow.vala',
+    'PortraitPage.vala',
+    'StorageManager.vala'
 )
 
 # Create the executable
