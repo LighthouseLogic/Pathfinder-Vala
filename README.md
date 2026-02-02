@@ -2,7 +2,7 @@
 
 **Pathfinder** is a tool for enhanced decision making for the [elementary OS](https://elementary.io) ecosystem. 
 
-Designed with the "LighthouseLogic" philosophy, Pathfinder aims to provide clear, reliable guidance through complex decision landscapes, utilizing native Vala and the Granite framework for a seamless, high-performance desktop experience.
+Designed with the "LighthouseLogic" philosophy, Pathfinder aims to provide a clear path through complex decision landscapes by utilizing native Vala and the Granite framework for a seamless, high-performance desktop experience.
 
 ## ✨ Features
 * **Native Performance:** Built with Vala and GTK for a lightweight footprint.
